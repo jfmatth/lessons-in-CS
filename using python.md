@@ -1,15 +1,11 @@
 # Windows
 
 - Use windows Terminal for all access to command-line stuff
-- Powershell should be the default
 
 ## Install latest powershell and UV
 
-UV is the preferred method to use Python
-
 ```
 winget install microsoft.powershell
-winget install astral.uv
 ```
 
 ## Make a folder on your system to keep all your projects
@@ -17,8 +13,6 @@ winget install astral.uv
 mkdir projects
 cd projects
 ```
-
-
 
 # Linux on Windows
 
@@ -33,7 +27,7 @@ https://learn.microsoft.com/en-us/windows/wsl/install
 
 From Terminal, choose WSL distribution "Ubunut 24.04 LTS"
 
-From here, it's just linux, with a few special exceptions for Windows users:
+From here, it's just linux, with a few **special exceptions** for Windows users:
 - The windows filesystem is mounted at ```/mnt/c/``` is your C: from Windows
 - The WSL filesystem is in Windows Explorer as a mounted system called Linux
 - ```localhost``` on Windows maps to the WSL localhost (if WSL is running)
@@ -76,6 +70,39 @@ sudo apt install gcc -y
     ```
     (unlike Windows, in Linux, applications in the folder you're in need to have the ```./``` prepended)
 
-
 ### Cool links
 - https://howik.com/how-to-run-c-on-wsl-a-complete-guide
+
+
+# Python on Windows / Linux
+
+## Installation via UV
+UV was installed earlier, now we'll use it
+
+UV is a package / Python manager and very fast
+
+## Creating a project
+Start a new python project in a folder (ex. .\Projects)
+
+```
+uv init python-1
+cd python-1
+uv venv
+.\venv\Scripts\activate.ps1
+```
+
+## Make a new main.py file
+
+Launch the editor
+```
+code .
+```
+
+- Open the ```main.py``` file and make some changes in the main() function
+- Save the file (ctrl+s) but leave the editor open
+
+Run it
+```
+python main.py
+```
+
