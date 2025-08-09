@@ -22,9 +22,10 @@ Helping to learn Computer Science before we head to College
 - Familiarity with a text editor or IDE (like VS Code or Code::Blocks)
 - Knowing how to compile and run a C program using a compiler (like GCC)
 
-### Windows specifics
-- WSL for Linux access
-
+    ### Windows specifics
+    - WSL for Linux environment
+    - VSCode for editor
+    - Github account for code / notes
 
 # Links
     - https://leetcode.com/problems
